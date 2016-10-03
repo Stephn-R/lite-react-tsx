@@ -1,0 +1,40 @@
+{
+  "name": "lite-react-tsx-starter",
+  "version": "1.0.0",
+  "description": "a super lite react webapp using TSX",
+  "main": "src/main.tsx",
+  "scripts": {
+    "clean": "rimraf bin dist",
+    "postinstall": "typings install",
+    "rollup": "rollup -c rollup.js",
+    "rollup:watch": "rollup -w -c rollup.js",
+    "tsc": "tsc -p src/",
+    "tsc:watch": "tsc -w -p src/",
+    "launch:chrome:debug": "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --remote-debugging-port=9222 http://localhost:8000",
+    "compile": "concurrently \"npm run rollup\" \"npm run tsc\" \"node scripts/compile.js\"",
+    "server": "lite-server -c bs-config.json",
+    "start": "npm run server",
+    "develop": "concurrently \"npm run rollup:watch\" \"npm run server\" \"node scripts/compileWatch.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chalk": "1.1.3",
+    "concurrently": "3.0.0",
+    "enzyme": "2.4.1",
+    "lite-server": "2.2.2",
+    "mocha": "3.1.0",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "rollup-watch": "2.5.0"
+  },
+  "dependencies": {
+    "rimraf": "2.5.4",
+    "rollup-plugin-typescript": "0.8.1",
+    "typescript": "2.0.3",
+    "typings": "1.4.0"
+  },
+  "author": "Stephen Rodriguez <stephen.rodriguez@gartner.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true
+}
