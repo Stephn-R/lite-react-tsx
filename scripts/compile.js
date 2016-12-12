@@ -12,4 +12,4 @@ exports.copyFile = () => {
   fs.createReadStream(htmlFile).pipe(
     fs.createWriteStream(distFolder)
   );
-}
+};
