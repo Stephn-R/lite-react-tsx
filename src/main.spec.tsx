@@ -1,4 +1,6 @@
+/// <reference path="../typings/index.d.ts" />
 /// <reference path="../node_modules/ava/types/generated.d.ts" />
+
 import test from 'ava';
 import Main from './main';
 
