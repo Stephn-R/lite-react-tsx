@@ -28,7 +28,8 @@
     "react-addons-test-utils": "^15.4.1",
     "react-dom": "15.3.2",
     "rimraf": "2.5.4",
-    "rollup-watch": "2.5.0"
+    "rollup-watch": "2.5.0",
+    "xo": "0.17.1"
   },
   "dependencies": {
     "rollup-plugin-typescript": "0.8.1",
