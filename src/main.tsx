@@ -1,7 +1,14 @@
 /// <reference path="../typings/index.d.ts" />
+import {Component} from 'react';
 
-const x = 3;
+class Main extends Component<{}, {}> {
+  constructor(props, context) {
+    super(props, context);
+  }
 
-console.log(x);
+  render() {
+    return <div>Hello World</div>;
+  }
+}
 
-export {x as x};
+export default Main;
