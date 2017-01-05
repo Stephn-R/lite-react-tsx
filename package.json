@@ -5,7 +5,6 @@
   "main": "src/main.tsx",
   "scripts": {
     "clean": "rimraf bin dist",
-    "postinstall": "typings install",
     "rollup": "rollup -c rollup.js",
     "rollup:watch": "rollup -w -c rollup.js",
     "tsc": "tsc -p src/",
@@ -32,9 +31,15 @@
     "xo": "0.17.1"
   },
   "dependencies": {
+    "@types/chai": "3.4.34",
+    "@types/core-js": "0.9.35",
+    "@types/enzyme": "2.7.0",
+    "@types/mocha": "2.2.35",
+    "@types/node": "6.0.57",
+    "@types/react": "0.14.55",
+    "@types/react-dom": "0.14.20",
     "rollup-plugin-typescript": "0.8.1",
-    "typescript": "2.0.3",
-    "typings": "1.4.0"
+    "typescript": "2.0.3"
   },
   "author": "Stephen Rodriguez <stephen.rodriguez@gartner.com>",
   "license": "SEE LICENSE IN LICENSE",
